@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1d4ed8"><title>آزمون راهنمایی و رانندگی</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('rq_theme');t=t?JSON.parse(t):(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+</head><body>
+<header><b>🚗 آزمون رانندگی</b><span><button id="themeBtn" aria-label="تغییر تم">◐</button><button id="exitBtn" aria-label="خروج" hidden>✕</button></span></header>
+<main id="view"></main>
+<nav id="tabs"><a href="#/" data-t="#/">آزمون‌ها</a><a href="#/practice" data-t="#/practice">تمرین‌ها</a><a href="#/videos" data-t="#/videos">ویدیوها</a></nav>
+<footer id="qbar" hidden><button id="pv" class="btn">‹ قبلی</button><button id="fin" class="btn red">پایان آزمون</button><button id="nx" class="btn pri">بعدی ›</button></footer>
+<div id="modal" hidden role="dialog" aria-modal="true"></div><div id="zoom" hidden></div>
+<script>for(var i=1;i<=20;i++)document.write('<script src="details/azmon'+i+'.js"><\/script>')</script>
+<script src="practice-data.js"></script><script src="priority.js"></script><script src="videos.js"></script><script src="app.js"></script></body></html>
